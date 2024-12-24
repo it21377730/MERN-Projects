@@ -6,18 +6,18 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  description: {
+    type: String,
+  },
   price: {
     type: Number,
     required: true
   },
-  description: {
+  category: {
     type: String,
   },
   image: {
     type: String, // URL or path to image
-  },
-  category: {
-    type: String,
   }
 });
 

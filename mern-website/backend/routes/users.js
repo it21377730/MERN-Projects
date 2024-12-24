@@ -63,6 +63,7 @@ router.post("/register", upload.single("profilePicture"), async (req, res) => {
     res.status(201).json({
       message: "User registered successfully!",
       user: {
+        userId: newUser._id,
         username: newUser.username,
         email: newUser.email,
         fullName: newUser.fullName,
