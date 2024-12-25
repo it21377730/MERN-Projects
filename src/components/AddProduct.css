@@ -1,0 +1,151 @@
+/* .add-product form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .add-product input, .add-product select, .add-product textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .products {
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-card button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #ff5a2e;
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .add-product {
+    background-color: #f0caca; /* Light pink color for the form background */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 15px; /* Rounded corners */
+    width: 90%; /* Prevent the form from stretching end-to-end */
+    max-width: 600px; /* Increased max-width to prevent compression */
+    margin: 20px auto; /* Center the form on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a modern look */
+  }
+  
+  .add-product form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap between inputs */
+  }
+  
+  .add-product input, 
+  .add-product select, 
+  .add-product textarea {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Slightly more rounded corners for inputs */
+    width: 100%; /* Ensure inputs fill the form container */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  }
+  
+  .add-product textarea {
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  
+  /* Hide spinner only for the price input */
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.price-input {
+  -moz-appearance: textfield;
+}
+ 
+  
+  .products {
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .product-card button {
+    background-color: #ff7f50; /* Keep existing button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #ff5a2e; /* Keep existing hover color */
+  }
+  

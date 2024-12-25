@@ -1,0 +1,243 @@
+/* Header Styles */
+/* src/styles.css */
+/* Example CSS */
+
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Add this to your existing styles.css */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; /* Space between navigation links */
+}
+
+.profile-info {
+  display: flex;
+  align-items: right;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circle shape */
+  margin-right: 10px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.logo-and-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px; /* Adjust based on your logo size */
+  height: 120px; /* Set height to match width */
+  border-radius: 50%; /* Make the logo circular */
+  margin-right: 10px;
+  margin-top: 0%;
+  object-fit: cover; /* Ensure the logo fits within the circle without distortion */
+}
+
+
+.shop-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.shop-info h4 {
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+  color: rgb(238, 30, 85);
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: flex-end; /* Moves items closer to the bottom */
+  padding: 20px; /* Adds space around the navigation */
+  position: relative; /* Ensures proper positioning within the header/container */
+  height: 70px; /* Adjust height to your preference */
+}
+
+nav a {
+  margin-left: 10px; /* Space between each button */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.homepage {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f0caca;
+}
+
+.header nav a {
+  margin: 0 20px;
+}
+
+.hero {
+  background-color: rgb(235, 106, 140);
+  padding: 40; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  width: 100%; /* Ensure it spans the full width of the screen */
+  text-align: center;
+}
+
+.featured {
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.add-to-cart, .buy-now {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+}
+
+
+/* Footer Styles */
+/* Make the entire page take full viewport height */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the page takes full viewport height */
+}
+
+
+/* Allow the content to grow, leaving the footer at the bottom if needed */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow: hidden; /* Prevent scrolling within the content section */
+}
+
+
+/* Footer styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.footer h4 {
+  font-size: 1.0rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f0caca;
+  padding-bottom: 5px;
+}
+
+.footer p,
+.footer a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer a:hover {
+  color: #f0caca; /* Highlight color on hover */
+}
+
+.footer .section {
+  margin-right: 20px;
+  flex: 1;
+  min-width: 100px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer .social-icons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 70%; /* Optional for round icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .section a {
+    display: block; /* Ensures links are displayed on separate lines */
+    margin-bottom: 10px; /* Adds space below each link */
+    text-decoration: none; /* Optional: Keeps links clean without underlines */
+    color: white; /* Ensures the links are readable */
+  }
+  
+  .footer .section a:hover {
+    color: lightgray; /* Optional: Add a hover effect for better UI */
+  }
+  
+  .footer .section {
+    margin-right: 20px;
+    flex: 1;
+    min-width: 100px;
+    margin-bottom: 20px; /* Adds space between sections */
+  }
+  
+}
